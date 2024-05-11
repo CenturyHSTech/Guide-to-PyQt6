@@ -31,7 +31,7 @@ class CustomTitleBar(QWidget):
             """
             QLabel { font-family: "Titillium Web", sans-serif;
                 font-size: 16pt; margin-left: 48px;
-                color: #002b44; padding: 4px;
+                color: #efefef; padding: 4px;
                 font-weight: 600;}
             """
             )
@@ -72,6 +72,7 @@ class CustomTitleBar(QWidget):
         self.normal_button.setIcon(normal_icon)
         self.normal_button.clicked.connect(self.window().showNormal)
         self.normal_button.setVisible(False)
+
         # Add buttons
         buttons = [
             self.min_button,
@@ -86,7 +87,7 @@ class CustomTitleBar(QWidget):
                 """QToolButton {
                     border: none;
                     padding: 2px;
-                    color: black;
+                    color: white;
                 }
                 """
             )
